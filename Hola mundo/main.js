@@ -1,10 +1,12 @@
 const app= Vue.createApp({
+
     data() {
         return{
             titulo: 'Hola mundo con vue.js',
-            cantidad: 1000,
+            nombre: 'Liz',
             enlace: 'https://youtube.com',
             estado: false,
+            fechaw: new Date(),
             servicios: ['transferencias', 'pagos', 'giros','cheques'],
             desactivar: false
         }
@@ -29,7 +31,15 @@ const app= Vue.createApp({
         mayusculasTexto(){
             return this.titulo.toUpperCase()
 
+        },
+        fecha(){
+            var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            return this.fechaw.getDate()+ ' de ' + months[this.fechaw.getMonth()] + ' de ' + this.fechaw.getFullYear()
+        },
+        hora(){
+            return this.fechaw.getHours() + ':' +  this.fechaw.getMinutes()
         }
     }
 
 })
+
