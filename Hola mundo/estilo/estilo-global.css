@@ -1,4 +1,13 @@
 
+.barra-img{
+    position: relative !important;
+    width: 100vw !important;
+    height: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    object-fit: cover;
+}
+
 .mini-calendario{
     width: 200px;
     display: flex;
@@ -28,6 +37,37 @@
     font-weight: bold;
 }
 
-#aggevn{
+select{
+    border: 0;
+    margin: 2px !important;
+    display: flex;
+    width: 98px !important;
+}
+
+.macro-calendario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sqr-macro-calendario{
+    display: flex;
+    flex-wrap: wrap !important; 
+    flex-direction: row !important;
+    justify-content: flex-start;
     align-items: center;
+    border: 0.5px solid #eeeeee;
+}
+
+.sqr-macro-calendario div{
+    height: 25px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+    font-weight: bold;
 }
