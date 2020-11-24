@@ -180,9 +180,9 @@ select{
     color: #535353;
 }
 
-.btn-agenda {
-    position: fixed;
-    height: 50px;
-    width: 200px !important;
-    border: 1px solid black;
+#agenda-btn {
+    right: 0;
+    height: 60px;
+    padding: 10px 0;
+    width: 250px !important;
 }

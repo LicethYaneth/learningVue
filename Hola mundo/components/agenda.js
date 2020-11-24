@@ -10,7 +10,7 @@ app.component("agenda", {
                 <span class="ml-auto hora">17:40</span>
               </a>
           </div>
-          <div class="btn-agenda ml-auto">
+          <div id="agenda-btn" class="text-center fixed-bottom ml-auto border-top">
             <button type="submit" class="btn btn-warning mb-3">Agregar agenda</button>
           </div>
       </div>
