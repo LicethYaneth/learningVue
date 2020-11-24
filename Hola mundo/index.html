@@ -12,8 +12,7 @@
     <body>
         <div id="app">
             <head-calendar :valor='nombre' :fecha='fecha' :hora='hora'></head-calendar>
-            <meses-izq :mes=11>
-            </meses-izq>
+            <meses-izq :mes='fechaN[1]'></meses-izq>
 
             <h2 v-if="cantidad>500">Cantidad: {{cantidad}}</h2>
             <h2 v-else-if="cantidad <= 500 && cantidad>0">

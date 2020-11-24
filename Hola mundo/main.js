@@ -38,6 +38,12 @@ const app= Vue.createApp({
         },
         hora(){
             return this.fechaw.getHours() + ':' +  this.fechaw.getMinutes()
+        },
+        fechaN(){
+            var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+            var fechaN = [this.fechaw.getDate(),this.fechaw.getMonth(),this.fechaw.getFullYear()];
+            return fechaN
+
         }
     }
 
