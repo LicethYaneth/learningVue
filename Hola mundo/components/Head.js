@@ -12,8 +12,8 @@ app.component('head-calendar',{
                 Son las {{hora}} 
             </small>
         </div>
-        <div class="">
-            <img src="https://source.unsplash.com/random/1400x20">
+        <div>
+            <img class="barra-img" src="https://source.unsplash.com/random/1400x20">
         </div>
     </div>
     `,
