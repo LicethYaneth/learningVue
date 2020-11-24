@@ -1,10 +1,10 @@
 app.component("meses-izq", {
   props: ["valor", "fecha", "mes"],
   template: /*html*/ `
-    <div name="aggevn" class="bg-light d-flex flex-column text-black float-left py-5 align-items-center" style="display:block; width: 250px">
+    <div class="d-flex flex-column align-items-center py-3" style="display:block; width: 250px">
         <button type="submit" class="btn btn-warning mb-3">Agregar Evento</button>
         <div class="d-flex  flex-row flex-nowrap flex-shrink-1 pb-2">
-            <select name="dob-month" value="11" class="browser-default custom-select">
+            <select value="11" class="browser-default custom-select">
                 <option value="01">Enero</option>
                 <option value="02">Febrero</option>
                 <option value="03">Marzo</option>

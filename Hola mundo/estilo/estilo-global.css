@@ -28,6 +28,9 @@
     font-weight: bold;
 }
 
-#aggevn{
-    align-items: center;
+select{
+    border: 0;
+    margin: 2px !important;
+    display: flex;
+    width: 98px !important;
 }
