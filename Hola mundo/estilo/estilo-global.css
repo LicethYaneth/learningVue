@@ -2,14 +2,29 @@
 * {
     font-family: 'Fira Sans', sans-serif;
 }
-
+.mascara{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgb(0, 0, 0, 0.6) 0%, rgb(0, 0, 0, 0.6) 30%, rgba(0,0,0,0) 80%);
+    height: 116px !important;
+    position: absolute;
+    z-index: 1000;
+    left: 0;
+    width: 40vw;
+}
 .barra-img{
-    height: 20px !important;
+    height: 116px !important;
+    right: 0 !important;
     margin: 0 !important;
     object-fit: cover;
     padding: 0 !important;
-    position: relative !important;
+    position: absolute !important;
     width: 100vw !important;
+    z-index: 3;
+}
+
+.titulo{
+    color: white !important;
+    z-index: 2000;
 }
 
 .mini-calendario{
@@ -41,11 +56,32 @@
     width: calc(200px/7.1);
 }
 
+.sqr-calendario > div > a {
+    border-radius: 10px;
+    color: #313131;
+    font-weight: 400;
+    height: 20px;
+    padding-top: 3px;
+    text-align: center;
+    text-decoration: none;
+    transition: 250ms;
+    width: 20px;
+}
+
+.sqr-calendario > div > a:hover {
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
 select{
     border: 0;
     display: flex;
     margin: 2px !important;
     width: 98px !important;
+}
+
+#macro-calend{
+    font-size: 0.8em;
 }
 
 #macro-calend > div > span{
@@ -67,18 +103,48 @@ select{
 }
 
 .sqr-macro-calendario > div{
+    border-style: dotted;
+    border-width: 0.5px;
+    border-color: #e5e5e5 !important;
+    border-left: 0.5px !important; 
+    border-top: 1px !important;
     color: #a9a9a9;
     display: flex;
-    font-size: 1em;
-    font-weight: bold;
     flex-direction: row !important;
     flex-wrap: wrap !important;
-    height: calc(100vh / 7.2) !important;
+    font-size: 1em;
+    font-weight: bold;
+    height: calc(100vh / 6.33) !important;
     justify-content: center;
     text-align: center !important;
     width: calc(100% / 7) !important;
 }
 
-.sqr-macro-calendario > div > span {
-    padding: 5px;
+.sqr-macro-calendario > div > a {
+    border-radius: 15px;
+    color: #a0a0a0;
+    margin-top: 2px;
+    font-size: 0.8em;
+    font-weight: 400;
+    height: 25px;
+    padding: 3px;
+    text-decoration: none;
+    transition: 250ms;
+    width: 25px;
+}
+
+.sqr-macro-calendario > div > a:hover {
+    background-color: #e6e6e6;
+    color: #575757;
+}
+
+.agenda > div {
+    width: 100% !important;
+}
+
+.agenda > div > a{
+    width: 100% !important;
+    text-decoration: none;
+    color: black;
+    text-align: left !important;
 }
