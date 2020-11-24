@@ -1,73 +1,84 @@
 
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
 .barra-img{
-    position: relative !important;
-    width: 100vw !important;
     height: 20px !important;
-    padding: 0 !important;
     margin: 0 !important;
     object-fit: cover;
+    padding: 0 !important;
+    position: relative !important;
+    width: 100vw !important;
 }
 
 .mini-calendario{
-    width: 200px;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    align-items: flex-start;
+    width: 200px;
 }
 
 .sqr-calendario{
+    align-items: center;
+    border: 0.5px solid #eeeeee;
     display: flex;
     flex-wrap: wrap !important; 
     flex-direction: row !important;
     justify-content: flex-start;
-    align-items: center;
-    border: 0.5px solid #eeeeee;
 }
 
 .sqr-calendario div{
-    width: calc(200px/7.1);
-    height: 25px;
+    align-items: center;
     display: flex;
     flex-direction: row !important;
-    justify-content: center;
-    align-items: center;
     font-size: 0.7em;
     font-weight: bold;
+    height: 25px;
+    justify-content: center;
+    width: calc(200px/7.1);
 }
 
 select{
     border: 0;
-    margin: 2px !important;
     display: flex;
+    margin: 2px !important;
     width: 98px !important;
 }
 
-.macro-calendario{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+#macro-calend > div > span{
+    font-weight: bold;
+}
+
+#macro-calend > div{
+    position: relative;
+    text-align: center;
+    width: calc(100% / 7) !important;
 }
 
 .sqr-macro-calendario{
+    border: 0.5px solid #eeeeee;
     display: flex;
     flex-wrap: wrap !important; 
     flex-direction: row !important;
     justify-content: flex-start;
-    align-items: center;
-    border: 0.5px solid #eeeeee;
 }
 
-.sqr-macro-calendario div{
-    height: 25px;
+.sqr-macro-calendario > div{
+    color: #a9a9a9;
     display: flex;
-    flex-direction: row !important;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7em;
+    font-size: 1em;
     font-weight: bold;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    height: calc(100vh / 7.2) !important;
+    justify-content: center;
+    text-align: center !important;
+    width: calc(100% / 7) !important;
+}
+
+.sqr-macro-calendario > div > span {
+    padding: 5px;
 }
