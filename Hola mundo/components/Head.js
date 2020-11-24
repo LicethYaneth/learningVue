@@ -20,7 +20,7 @@ app.component('head-calendar',{
     `,
     data(){
         return{
-            texto: 'Hola '
+            texto: 'Buenos días,'
         }
     }
 })
