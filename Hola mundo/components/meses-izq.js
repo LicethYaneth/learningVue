@@ -1,7 +1,7 @@
 app.component("meses-izq", {
   props: ["valor", "fecha", "mes"],
   template: /*html*/ `
-    <div class="d-flex flex-column align-items-center py-3" style="display:block; width: 250px">
+    <div class="d-flex flex-column align-items-center py-3 barra-evento">
         <button type="submit" class="btn btn-warning mb-3">Agregar Evento</button>
         <div class="d-flex  flex-row flex-nowrap flex-shrink-1 pb-2">
             <select name="dob-month" class="browser-default custom-select">
